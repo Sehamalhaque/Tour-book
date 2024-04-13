@@ -23,6 +23,9 @@ const Navbar = ({theme, setTheme}) => {
          <li> Booking</li>
          <li> Guides</li>
          <li> Reviews</li>
+         <li> Map </li>
+         <li> Calender</li>
+         
        </ul>
 
        <div className='search-box'>
