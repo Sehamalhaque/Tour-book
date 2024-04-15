@@ -1,25 +1,68 @@
 import React from 'react'
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Booking  from './pages/booking'
-import Nav from './components/nav'
-const App = () => {
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+ import Booking  from './pages/booking.jsx'
+ import Nav from './components/nav.jsx'
+ import Home from './home.jsx';
+import Reviews from "./pages/reviews.jsx"
+import Gallery from "./pages/gallery.jsx"
+import Packages from './pages/packages.jsx';
+import Guides from './pages/Guides.jsx'
+import Account from './pages/login.jsx'
+
+ 
+ const router = createBrowserRouter([
+
+  {
+    path: "/",
+    exact: true,
+    element: <Home/>
+  },
+  
+  {
+    path: "/booking",
+    element: <Booking/>,
+
+  },
+  {
+    path: "/packages",
+    element: <Packages/>,
+
+  },
+  {
+    path: "/login",
+    element: <Account/>,
+
+  },
+  {
+    path: "/reviews",
+    element: <Reviews/>,
+
+  },
+  {
+    path: "/guides",
+    element: <Guides/>,
+
+  },
+  {
+    path: "/gallery",
+    element: <Gallery/>,
+
+  },
+]);
+
+function App() {
   return (
-    <Router>
-     <Nav />
-     <main className="main-content">
-       <Routes>
-         <Route path="/" element={<Home />} />
-         <Route path="/gallery" element={<Gallary />} />
-         <Route path="/guides" element={<Guides />} />
-         <Route path="/packages" element={<Packages />} />
-         <Route path="/booking" element={<Booking />} />
-         <Route path="/login" element={<Account/>} />
+    <div className="App">
+      <RouterProvider router={router} />
+    </div>
+  );
+} 
 
-        
-       </Routes>
-     </main>
-   </Router>
-  )
-}
+ 
+ export default App
 
-export default App
+
+
