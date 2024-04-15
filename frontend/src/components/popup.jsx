@@ -8,12 +8,13 @@ const popup = () => {
         type="button"
         className="absolute -end-1 -top-1 rounded-full border border-gray-200 bg-white p-1 text-gray-400"
       >
-        <span className="sr-only">Close</span>
+       <span className="sr-only"> close</span>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="h-3 w-3"
           viewBox="0 0 20 20"
           fill="currentColor"
+
         >
           <path
             fillRule="evenodd"
@@ -21,6 +22,7 @@ const popup = () => {
             clipRule="evenodd"
           />
         </svg>
+        
       </button>
   
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
