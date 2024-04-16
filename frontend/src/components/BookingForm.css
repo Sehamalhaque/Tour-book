@@ -6,14 +6,14 @@
     margin: 0 auto;
     padding: 20px;
     background-color: #fff; 
-    border: 2px solid #3cb371; 
+    border: 2px solid #3c40b3; 
     border-radius: 5px;
   }
   
   .booking-form label {
     display: block;
     margin-bottom: 10px;
-    color: #3cb371; 
+    color: #403cb3; 
   }
   
   .booking-form input[type="text"],
@@ -22,12 +22,12 @@
     width: 100%;
     padding: 8px;
     margin-bottom: 10px;
-    border: 1px solid #3cb371;
+    border: 1px solid #1128b9;
     border-radius: 5px;
   }
   
   .booking-form button {
-    background-color: #3cb371; 
+    background-color: #3c5ab3; 
     color: #fff; 
     padding: 10px 20px;
     border: none;
@@ -36,6 +36,6 @@
   }
   
   .booking-form button:hover {
-    background-color: #2e8b57; 
+    background-color: #312e8b; 
   }
   
