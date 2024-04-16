@@ -1,6 +1,6 @@
 import { useRef, useState, useEffect, useContext } from 'react';
-import AuthContext from "./context/AuthProvider";
-
+import AuthContext from "./context/AuthProvider.js"
+import React from 'react';
 import axios from './api/axios';
 const LOGIN_URL = '/auth';
 
@@ -13,7 +13,6 @@ const Login = () => {
     const [pwd, setPwd] = useState('');
     const [errMsg, setErrMsg] = useState('');
     const [success, setSuccess] = useState(false);
-
     useEffect(() => {
         userRef.current.focus();
     }, [])
@@ -34,7 +33,7 @@ const Login = () => {
                 }
             );
             console.log(JSON.stringify(response?.data));
-            //console.log(JSON.stringify(response));
+            
             const accessToken = response?.data?.accessToken;
             const roles = response?.data?.roles;
             setAuth({ user, pwd, roles, accessToken });
@@ -94,7 +93,7 @@ const Login = () => {
                     <p>
                         Need an Account?<br />
                         <span className="line">
-                            {/*put router link here*/}
+                            {/* router link here*/}
                             <a href="#">Sign Up</a>
                         </span>
                     </p>

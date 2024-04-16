@@ -44,6 +44,7 @@ function BookingForm() {
       <br />
       <button type="submit">Book</button>
     </form>
+    
   );
 }
 

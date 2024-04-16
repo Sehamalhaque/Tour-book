@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import "./nav.css"
+import DarkModeToggle from './DarkModeToggle';
 
 const Nav = () => {
   
@@ -30,6 +31,8 @@ const Nav = () => {
           <Link to="/login" className="link">Account</Link>
         </li>
       </ul>
+    
+    
     </nav>
 
     
