@@ -4,7 +4,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
  import Booking  from './pages/booking.jsx'
- import Nav from './components/nav.jsx'
+ 
  import Home from './home.jsx';
 import Reviews from "./pages/reviews.jsx"
 import Gallery from "./pages/gallery.jsx"
@@ -32,8 +32,8 @@ import Account from './pages/login.jsx'
 
   },
   {
-    path: "/login",
-    element: <Account/>,
+     path: "/login",
+     element: <Account/>,
 
   },
   {

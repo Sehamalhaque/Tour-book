@@ -6,7 +6,9 @@ function BookingForm() {
   const [email, setEmail] = useState('');
   const [place, setPlace] = useState('');
   const [numberOfPeople, setNumberOfPeople] = useState('');
+  const [NeedGuide,setGuide] = useState('');
 
+  
   const handleSubmit = (event) => {
     event.preventDefault();
    console.log('Form submitted:', { name, email, place, numberOfPeople });
@@ -14,6 +16,7 @@ function BookingForm() {
     setEmail('');
     setPlace('');
     setNumberOfPeople('');
+    setGuide("")
   };
 
   return (
@@ -39,6 +42,16 @@ function BookingForm() {
           type="number"
           value={numberOfPeople}
           onChange={(e) => setNumberOfPeople(e.target.value)}
+        />
+      </label>
+      <br />
+      <br />
+      <label>
+        Need Guide
+        <input
+          type="number"
+          value={NeedGuide}
+          onChange={(e) => setGuide(e.target.value)}
         />
       </label>
       <br />
